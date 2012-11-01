@@ -30,6 +30,7 @@ printCredit () {
     $mdparser $dnbpath/site/credit.md | sed 's/<p>/\t/g' | sed 's/<\/p>/\t/g'
     endDiv
 }
+#HTML Sections
 printHead () {
     echo '<!DOCTYPE html>'
     echo '<html>'
@@ -63,8 +64,16 @@ printEnd () {
     echo '</body>'
     echo '</html>'
 }
+printEntries () {
+    #Open content
+    openDiv content
+    
+    #Close content
+    endDiv
+}
 printHTML () {
     printHead
+    printEntries
     printCredit
     printEnd
 }
