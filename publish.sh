@@ -3,8 +3,8 @@
 # Configuration options
 dnbpath="." #This should be changed if calling this script from outside its parent dir.
 outputpath="output"
-#mdparser="multimarkdown"
-mdparser="/Volumes/s_fs/samsHome/packages/multiMarkdown/bin/multimarkdown"
+mdparser="multimarkdown"
+#mdparser="/Volumes/s_fs/samsHome/packages/multiMarkdown/bin/multimarkdown"
 
 cd $dnbpath
 
@@ -49,6 +49,13 @@ printEntry () {
 	echo "<div class=\"entry\">"
 	tail -n+6 $entryfile | $mdparser
 	# Close entry
+	endDiv
+	# Open postinfo
+	openDiv postinfo
+	dateInfo=$(sed -n '3p' $entryfile | sed 's/Date://g' | $mdparser | sed 's/<p>//g' | sed 's/<\/p>//g')
+	tagsInfo=$(sed -n '4p' $entryfile | sed 's/Tags://g' | $mdparser | sed 's/<p>//g' | sed 's/<\/p>//g')
+	echo "Posted on: "$dateInfo" | Tagged with: "$tagsInfo
+	# Close postinfo
 	endDiv
 	# Close Entry ID Number
 	endDiv
