@@ -48,11 +48,6 @@ body {
     font-size: 11px;
     position: relative;
 }
-h2 {
-    font-family: verdana, Arial, Helvetica, sans-serif;
-    font-size: 15px
-    margin-top: 0px;
-}
 #rap {
     background-color: #fff;
     width: 880px;
@@ -60,6 +55,15 @@ h2 {
     padding: 5px;
     float: left;
     position: relative;
+}
+#postinfo {
+ width:650px;
+ background-image:url("tile.gif");
+ font-family: helvetica, arial, verdana;
+ color:#555;
+ padding:5px 5px 5px 5px;
+ margin-top: 10px;
+ margin-bottom: 20px;
 }
 h2 {
     font-family: verdana, arial, helvetica, sans-serif;
