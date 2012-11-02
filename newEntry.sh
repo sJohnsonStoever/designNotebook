@@ -9,7 +9,9 @@ cd $dnbpath
 # Output to file
 bareEntry () {
     echo 'Title: '
-    echo 'Date: '$(date +"%B %d, %Y")
+    echo 'NBTopper: '$(date +"%B %d, %Y")
+    echo 'Date: '$(date +"%Y-%m-%d %H:%M:%S")
+    echo 'Tags: '
     echo ' '
     echo ' '
 }

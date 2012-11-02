@@ -39,7 +39,7 @@ printEntry () {
 	openDiv $(echo $entryfile | cut -d/ -f 2 | cut -d. -f 1)
 	# Open topper
 	openDiv topper
-	sed -n '2p' $entryfile | sed 's/Date://g' | $mdparser | sed 's/<p>//g' | sed 's/<\/p>//g'
+	sed -n '2p' $entryfile | sed 's/NBTopper://g' | $mdparser | sed 's/<p>//g' | sed 's/<\/p>//g'
 	# Close topper
 	endDiv
 	echo '<h2>'
@@ -47,7 +47,7 @@ printEntry () {
 	echo '</h2>'
 	# Open entry
 	echo "<div class=\"entry\">"
-	tail -n+4 $entryfile | $mdparser
+	tail -n+6 $entryfile | $mdparser
 	# Close entry
 	endDiv
 	# Close Entry ID Number
