@@ -96,7 +96,7 @@ printEnd () {
 printEntries () {
     #Open content
     openDiv content
-    entryFILES=$(ls entries/*.md | tail -r )
+    entryFILES=$(ls entries/*.md | sed '1!G;h;$!d' )
     for f in $entryFILES
     do
     	printEntry $f
@@ -137,7 +137,9 @@ printHTML () {
 if [ -d $outputpath.bak ]; then
 	rm -r $outputpath.bak
 fi
-mv $outputpath $outputpath.bak
+if [ -d $outputpath ]; then 
+    mv $outputpath $outputpath.bak
+fi
 mkdir $outputpath
 if [ -d entries/images ]; then
 	cp -r entries/images $outputpath/
