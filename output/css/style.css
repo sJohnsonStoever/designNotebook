@@ -1,0 +1,219 @@
+/* 
+Theme name: designNotebook
+Description: A bbv1 clone for use with multimarkdown.
+Version: 0.0.2
+Authors: Samuel Johnson Stoever, Aaron Adams
+Date: October 2012
+
+     The CSS, images, and design is all released under the GPL:
+     http://www.gnu.org/copyleft/gpl.html
+*/
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+a:active {
+    text-decoration: none;
+    color: #242424;
+}
+a:visited {
+    text-decoration: none;
+    color: #ff0000;
+}
+a img { 
+    border: none;
+}
+blockquote {
+    color: #666;
+    background-image:url("tile2.gif");
+    border-left: 2px solid #666;
+    padding-left: 5px;
+    margin-left: 18px;
+}
+#topper {
+	font-family: helvetica, arial, verdana;
+	font-size:11px;
+	background: #666;
+	color:#fff;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+}
+body {
+    background-color: #e8e8e8;
+    color: #555;
+    font-family: verdana, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    position: relative;
+}
+h2 {
+    font-family: verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px
+    margin-top: 0px;
+}
+#rap {
+    background-color: #fff;
+    width: 880px;
+    height: 100%;
+    padding: 5px;
+    float: left;
+    position: relative;
+}
+h2 {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 0px;
+}
+h3 {
+    font-family: verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: 0px;
+}
+title {
+    font-family: verdana, Arial, Helvetica, sans-serif;
+    margin: 15px 0 2px 0;
+    padding-bottom: 2px;
+    font-size: 12px;
+}
+p, li {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+}
+.entry {
+    font-family: helvetica, arial, verdana;
+    color: #242424;
+}
+.entry img {
+    max-width: 650px;
+}
+.entry a {
+    text-decoration: underline;
+    color: #555;
+}
+.entry a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+}
+
+#content {
+    float: right;
+    width: 660px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#headwrap {
+    background-color: #ff0000;
+    padding: 10px 5px 5px 10px;
+    height: 52px;
+    width: 845px;
+    float: left;
+    margin-left: 10px;
+    margin-top:10px;
+}
+#header {
+    font-family: helvetica, arial;
+    font-size: 27px;
+    color: #242424;
+    font-weight: bold;
+    line-height: 80%;
+}
+#header a {
+    color: #242424;
+    text-decoration: none;
+}
+#header a:hover {
+    text-decoration: none;
+}
+#header h2 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+}
+#sidebar {
+    background: #666;
+    color: #fff;
+    padding: 10px 5px 5px 12px;
+    float: left;
+    width: 170px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+#sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    font-size: 10px;
+    padding-left: 0px;
+}
+#sidebar a:hover {
+   text-decoration: none;
+   color: #ff0000;
+}
+#sidebar ul {
+    color: #ff0000;
+    font-weight: normal;
+    font-size: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0px;
+}
+#sidebar ul li {
+    font-family: verdana, arial, helvetica, sans-serif;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    font-weight: normal;
+    font-size: 10px;
+    width: 160px;
+    list-style-type: none;
+    color: #fff
+}
+#sidebar ul ul li {
+    border-bottom: 1px solid #ccc;
+    font-family: verdana, arial, helvetica, sans-serif;
+    padding-bottom: 0px;
+    font-size: 10px;
+    font-weight: normal;
+    list-style-type: none;
+    color: #fff;
+    padding-left: 10px;
+    width: 150px;
+}
+#sidebar ul ul li a:hover {
+    color: #ff0000;
+    font-size: 10px;
+}
+#desc {
+    color: #3a3a3a;
+    font-family: georgia, sans-serif;
+    font-style: italic;
+    float: left;
+    font-size: 11px;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+#credit {
+	position:absolute;
+	left:15px;
+	bottom:5px;
+	float:left;
+	font-size:9px;
+	color:#666;
+}
+
+#credit a {
+	color: #242424;
+	font-size:9px;
+}
+
+.navigation {
+        background-image:url("tile2.gif");
+        color:#666;
+        padding: 5px 5px 5px 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 10px;
+}
