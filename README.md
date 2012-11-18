@@ -22,6 +22,13 @@ Also, remember to not add any extra markdown headers, or to remove any, even if 
 
 ## Customization ##
 
+The first task would be to customize the files in the 'site' directory, each one is resposible for text rendered in different parts of the page. Each of these can contain markdown syntax.
+
+* **head1.md** - The larger, top-most text in the header
+* **head2.md** - The smaller, bottom-most text in the header.
+* **blogLinks.md** - The links that are rendered in the leftPane, underneath the links for the in-document links for the notebook entries.
+* **credit.md** - The text that is rendered at the very bottom of the page.
+
 The newEntry.sh script contains the variable **editor** (default is emacs) which is the editor that opens up the notebook entry once is has been generated.
 
 The 'publish.sh' script contains the following variables:
