@@ -1,6 +1,7 @@
 # Design Notebook #
 
-By [Samuel Johnson Stoever](http://github.com/sJohnsonStoever). Screenshot of [output with example entries](screenshot.png).
+By [Samuel Johnson Stoever](http://github.com/sJohnsonStoever).  
+Screenshot of output with the stock set of example entries can be found in 'screenshot.png'.
 
 A (very) simple blog-style static html 'notebook' generator with layout and design adopted from the bbv1 Wordpress theme by [Aaron Adams](http://aaronadams.me/), as used by the [MIT Disobedience Project webpage](http://disobedience.mit.edu/).
 
