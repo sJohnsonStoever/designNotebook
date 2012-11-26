@@ -4,7 +4,6 @@
 dnbpath="." #This should be changed if calling this script from outside its parent dir.
 outputpath="output"
 mdparser="multimarkdown"
-#mdparser="/Volumes/s_fs/samsHome/packages/multiMarkdown/bin/multimarkdown"
 
 cd $dnbpath
 
