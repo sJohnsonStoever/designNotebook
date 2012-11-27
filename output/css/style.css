@@ -221,3 +221,7 @@ p, li {
         margin-top: 20px;
         font-size: 10px;
 }
+
+pre code {
+        white-space: pre-wrap;
+}
