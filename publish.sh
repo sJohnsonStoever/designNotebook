@@ -4,6 +4,7 @@
 dnbpath="." #This should be changed if calling this script from outside its parent dir.
 outputpath="output"
 mdparser="multimarkdown"
+pageTitle="Design Notebook"
 
 cd $dnbpath
 
@@ -72,7 +73,7 @@ printHead () {
     echo '<head>'
     echo "\t<meta charset=\"utf-8\"/>"
     echo "\t<link type=\"text/css\" rel=\"stylesheet\" href=\"css/style.css\"/>"
-    echo '\t<title>Design Notebook</title>'
+    echo '\t<title>'$pageTitle'</title>'
     echo '</head>'
     echo '<body>'
     #Open rap
