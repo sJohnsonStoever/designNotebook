@@ -12,8 +12,8 @@ bareEntry () {
     echo 'NBTopper: '$(date +"%B %d, %Y")
     echo 'Date: '$(date +"%Y-%m-%d %H:%M:%S")
     echo 'Tags: '
-    echo ' '
-    echo ' '
+    echo ''
+    echo ''
 }
 
 bareEntry > entries/$filename
